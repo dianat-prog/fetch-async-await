@@ -66,3 +66,121 @@ header {
 #searchBtn:hover, #prevBtn:hover, #nextBtn:hover, #resetBtn:hover {
   opacity: 0.8;
 }
+
+
+/*Mi CSS*/
+.ulPokemon{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap:20px;
+}
+
+
+.liElement{
+  list-style: none;
+  width: 250px;
+  height: 350px;
+  border: 1px solid rgb(230, 221, 221);
+  border-radius: 4px;
+}
+
+
+.container{
+  display: flex;
+  flex-direction: column;;
+  background-color:white;
+  height: 100%;
+  width:100%;
+  align-items: center;
+
+
+  
+}
+
+.divImg{
+  margin-top: 40px;
+}
+.imgPokemon{
+  width: 200px;
+  height: 200px;
+}
+
+.divName{
+  margin-top: 20px;
+}
+
+.divInfo{
+  display: flex;
+  flex-wrap: wrap;
+}
+.divName h3{
+  font-size: 1px;
+}
+
+/*Favorito*/
+.divFavorite{
+  position: relative;
+}
+
+.noFavorite  {
+  width: 18px;
+  height: 18px;
+  position: absolute; /* se usa en caso de este div, donde tiene la altura y el ancho definido, sin esto top, right y left no funcionarían */
+  left: 35px;
+ }
+ .favorite{
+  display: none;
+  width: 18px;
+  height: 18px;
+  position: absolute; /* se usa en caso de este div, donde tiene la altura y el ancho definido, sin esto top, right y left no funcionarían */
+  left: 35px;
+ }
+
+
+ /*Ventana que muestra información del pokemon*/
+ .divPokemon{
+  position: fixed;
+  text-align: center;
+  width: 330px;
+  height: 450px;
+  background: rgb(96, 113, 129);
+  border: 1px solid rgb(150, 136, 136);
+  padding: 10px;
+  margin: auto;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 10;
+  display: none;
+   border-radius: 10px;
+  color: white;
+}
+
+.divImgPop{
+  width: 350px;
+  height: 150px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.imgPokemonPop{
+  width: 100%;
+  height: 100%;
+  cursor:pointer;
+ 
+}
+#btnClose{
+  margin-top: 10px;
+  background-color: rgb(96, 126, 131);
+  cursor:pointer;
+  border: solid 0.5px #a39c94;
+  width: 80px;
+  height: 30px;
+  color: azure;
+  }
+
+a{
+  text-decoration: none;
+}
